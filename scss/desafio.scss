@@ -2,27 +2,40 @@
 $color-principal: cyan;
 
 
-header {
-    background-color: $color-principal;
-}
-
 
 /*head*/
+
+@mixin titulo {
+    color: rgb(253, 252, 252);
+    -webkit-text-stroke: 2px rgb(8, 8, 8);
+}
+
 h1 {
+    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Mochiy Pop P One', sans-serif;
     height: 0;
-    color: white;
+    @include titulo();
     margin-left: 30px;
-    
+    margin-top: 10px;
+
     animation-duration: 3s;
     animation-name: aparecer;
 
+    
+
 }
+
+
 
 /*Efecto de head*/
 ul {
     height: 100px;
     transition: 2s;
 }
+
+/*tamañodecarousel-linea5991*/
 
 /*header*/
 header {
@@ -51,6 +64,13 @@ section {
 
 /*footer*/
 h2 {
+    font-family: 'Acme', sans-serif;
+    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Righteous', cursive;
     margin-left: 3%;
     margin-top: 3%;
     margin-bottom: 2%;
@@ -109,14 +129,10 @@ form {
     margin-top: 3%;
     margin-bottom: 3%;
     position: relative;
-    text-align:justify;
+    text-align: justify;
     margin-left: 25%;
 }
 
 .titulo {
-    margin-left: 4%;}
-
-
-
-
-
+    margin-left: 4%;
+}
